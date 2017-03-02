@@ -7,13 +7,32 @@
 
 }
 
+.wrapper {
+	width: 850px;
+	height: 850px;
+	border: 10px solid #008B8B;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+}
+
 .chess-board {
 	width: 810px;
 	height: 810px;
 	border: 10px solid black;
-	position: relative;
-	top: 50px;
-	left: 500px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;	
+}
+
+.row {
+	position: absolute;
 }
 
 .box {
@@ -24,35 +43,53 @@
 
 /*rows */
 
-.row2 .box {
+.row2 {
 	top: 100px;
 }
 
-.row3 .box {
+.row3 {
 	top: 200px;
 }
 
-.row4 .box {
+.row4 {
 	top: 300px;
 }
 
-.row5 .box {
+.row5 {
 	top: 400px;
 }
 
-.row6 .box {
+.row6 {
 	top: 500px;
 }
 
-.row7 .box {
+.row7 {
 	top: 600px;
 }
 
-.row8 .box {
+.row8 {
 	top: 700px;
 }
 
-/* columns */
+.row1 .box:nth-child(odd),
+.row3 .box:nth-child(odd),
+.row5 .box:nth-child(odd),
+.row7 .box:nth-child(odd) {
+	background-color: black;
+}
+
+.row2 .box:nth-child(even),
+.row4 .box:nth-child(even),
+.row6 .box:nth-child(even),
+.row8 .box:nth-child(even) {
+	background-color: black;
+}
+
+/*columns */
+
+.column1 {
+	left: 0;
+}
 
 .column2 {
 	left: 100px;
@@ -80,23 +117,6 @@
 
 .column8 {
 	left: 700px;
-}
-
-
-/* color */
-
-.row1 .box:nth-child(odd),
-.row3 .box:nth-child(odd),
-.row5 .box:nth-child(odd),
-.row7 .box:nth-child(odd) {
-	background-color: black;
-}
-
-.row2 .box:nth-child(even),
-.row4 .box:nth-child(even),
-.row6 .box:nth-child(even),
-.row8 .box:nth-child(even) {
-	background-color: black;
 }
 
 /* blue checkers */
